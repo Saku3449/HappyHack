@@ -12,52 +12,59 @@ a {
     text-decoration: none;
 }
 
-.bg-swicher {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../images/background1.jpg);
-    background-position: center center;
-    background-size: cover;
-    display: flex;
-    overflow: hidden;
+h3,
+footer {
+    font-family: 'Futura';
 }
 
-.bg-swicher * {
-    color: #fff;
+h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 53px;
+    color: #3d5cdb;
 }
 
-.bg-swicher .title * {
+section {
     text-align: center;
 }
 
-.bg-swicher .title {
-    position: absolute;
-    top: 50%;
-}
-
-.bg-swicher h2 {
-    font-family: 'Futura';
-    font-style: italic;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-}
-
-nav {
-    position: absolute;
+.intro-content {
     display: flex;
-    justify-content: space-between;
-    padding: 30px 10px;
-
-    top: 0;
-    width: 100%;
+    justify-content: center;
 }
 
-nav ul {
-    display: flex;
+.intro-content img,
+.intro-text {
+    min-width: 500px;
+    width: 500px;
+    margin: 20px;
 }
 
-nav li {
-    list-style: none;
-    margin-left: 50px;
+.intro-content img {
+    height: auto;
+    object-fit: fill;
+}
+
+.intro-text p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #333333;
+    overflow: wrap;
+    text-align: left;
+    padding: 20px;
+}
+
+.intro-text a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #3E5DDB;
+    padding: 10px 50px;
+    border-radius: 10px;
 }
 
 footer {

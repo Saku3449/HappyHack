@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url(../fonts/);
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-swicher {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/background1.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    overflow: hidden;
+}
+
+.bg-swicher * {
+    color: #fff;
+}
+
+.bg-swicher .title * {
+    text-align: center;
+}
+
+.bg-swicher .title {
+    position: absolute;
+    top: 50%;
+}
+
+.bg-swicher h2 {
+    font-family: 'Futura';
+    font-style: italic;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10px;
+
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+footer {
+    font-family: "Futura";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 60px;
+    color: #3d5cdb;
+    text-align: center;
+}

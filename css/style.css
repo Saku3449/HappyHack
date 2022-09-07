@@ -117,6 +117,26 @@ section {
     margin: 30px 0;
 }
 
+.slick-initialized .slick-slide {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 3px solid #dcdcdc;
+    border-radius: 10px;
+    height: 350px;
+    margin: 50px 50px 0 50px;
+    padding: 50px;
+}
+
+.slide-box {
+    padding: 30px;
+    margin: 30px;
+}
+
+.images img {
+    width: 100%;
+}
+
 footer {
     font-family: "Futura";
     font-style: normal;

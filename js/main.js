@@ -20,7 +20,7 @@ $(function ($) {
   });
 
   $(".slider").slick({
-    arrows: false,
+    arrows: true,
     autoplay: true,
     dots: true,
     centerMode: true,
@@ -41,6 +41,4 @@ $(function ($) {
       "swing"
     );
   });
-
-  
 });

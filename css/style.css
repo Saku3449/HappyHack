@@ -19,6 +19,7 @@ a {
     text-decoration: none;
 }
 
+h2,
 h3,
 footer {
     font-family: 'Futura';
@@ -39,17 +40,51 @@ section {
 .bg-swicher {
     width: 100vw;
     height: 100vh;
-    background-image: url(images/bg1.jpg);
+    background-image: url(/images/background1.jpg);
     background-position: center center;
     background-size: cover;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
 }
 
 .bg-swicher img {
-    width: 500px;
+    width: 900px;
+}
+
+h2 {
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav p {
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+nav a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .intro-content {

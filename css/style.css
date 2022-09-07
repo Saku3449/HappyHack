@@ -36,6 +36,22 @@ section {
     text-align: center;
 }
 
+.bg-swicher {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/bg1.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.bg-swicher img {
+    width: 500px;
+}
+
 .intro-content {
     display: flex;
     justify-content: center;
@@ -117,24 +133,18 @@ section {
     margin: 30px 0;
 }
 
-.slick-initialized .slick-slide {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border: 3px solid #dcdcdc;
-    border-radius: 10px;
-    height: 350px;
-    margin: 50px 50px 0 50px;
-    padding: 50px;
+.slider {
+    margin: 50px;
+    max-width: 100%;
 }
 
-.slide-box {
-    padding: 30px;
-    margin: 30px;
-}
-
-.images img {
+.slider img {
     width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
 }
 
 footer {

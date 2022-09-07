@@ -21,10 +21,12 @@ $(function ($) {
 
   $(".slider").slick({
     arrows: true,
-    autoplay: true,
     dots: true,
+    autoplay: false,
+    slidesToShow: 3,
+    intinite: true,
     centerMode: true,
-    centerPadding: "20%",
+    centerPadding: "0%",
   });
 
   $('nav a[href^="#"]').click(function () {

@@ -7,7 +7,7 @@ canvas {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: -1;
 }
 
 @font-face {
@@ -21,10 +21,18 @@ a {
     overflow: hidden;
 }
 
+a:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
 h2,
 h3,
 footer {
     font-family: 'Futura';
+}
+
+h2 {
+    font-style: italic;
 }
 
 h3 {
@@ -38,6 +46,21 @@ h3 {
 
 section {
     text-align: center;
+}
+
+.fadein {
+    /* 最初は非表示 */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-30px);
+    transition: opacity 1s, visibility 1s, transform 1s;
+}
+
+/* フェードイン時に入るクラス */
+.is-fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
 }
 
 .bg-swicher {
@@ -88,6 +111,11 @@ nav a {
     font-weight: bold;
     text-decoration: none;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+nav a:hover {
+    color: #3D5CDB;
+    transition: 0.5s;
 }
 
 .intro-content {

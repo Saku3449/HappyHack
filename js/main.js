@@ -10,13 +10,15 @@ $(function ($) {
   });
 
   $(window).scroll(function () {
-    var targetElement = $(".fadein").offset().top;
-    var scroll = $(window).scrollTop();
-    var windowHeight = $(window).height();
-    if (scroll > targetElement - windowHeight + 200) {
-      $(".fadein").css("opacity", "1");
-      $(".fadein").css("transform", "translateY(0)");
-    }
+    const windowHeight = $(window).height();
+    const scroll = $(window).scrollTop();
+
+    $(".fadein").each(function () {
+      const targetPosition = $(this).offset().top;
+      if (scroll > targetPosition - windowHeight + 100) {
+        $(this).addClass("is-fadein");
+      }
+    });
   });
 
   $(".slider").slick({
@@ -28,25 +30,25 @@ $(function ($) {
     centerMode: true,
     centerPadding: "0%",
     responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-            }
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
         },
-        {
-            breakpoint: 635,
-            settings: {
-                slidesToShow: 2,
-            }
+      },
+      {
+        breakpoint: 635,
+        settings: {
+          slidesToShow: 2,
         },
-        {
-            breakpoint: 450,
-            settings: {
-                slidesToShow: 1,
-            }
+      },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
         },
-    ]
+      },
+    ],
   });
 
   $('nav a[href^="#"]').click(function () {

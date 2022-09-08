@@ -17,6 +17,8 @@ canvas {
 
 a {
     text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 h2,
@@ -31,6 +33,7 @@ h3 {
     font-size: 53px;
     color: #3d5cdb;
     margin: 40px;
+    overflow: hidden;
 }
 
 section {

@@ -23,10 +23,30 @@ $(function ($) {
     arrows: true,
     dots: true,
     autoplay: false,
-    slidesToShow: 3,
+    slidesToShow: 4,
     intinite: true,
     centerMode: true,
     centerPadding: "0%",
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 635,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 450,
+            settings: {
+                slidesToShow: 1,
+            }
+        },
+    ]
   });
 
   $('nav a[href^="#"]').click(function () {

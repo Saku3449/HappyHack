@@ -210,11 +210,6 @@ nav a:hover {
     margin: 30px 0;
 }
 
-#images {
-    /* margin-top: 50px; */
-    z-index: -5;
-}
-
 .slider {
     margin: 50px 150px;
     max-width: 100%;
@@ -248,6 +243,10 @@ footer {
 }
 
 @media(max-width:450px) {
+    h3 {
+        font-size: 2rem;
+    }
+
     nav {
         display: none;
     }
@@ -309,6 +308,12 @@ footer {
         font-weight: 700;
         font-size: 12px;
         margin: 10px 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .slider {
+        margin: 10vw;
     }
 
     iframe {
